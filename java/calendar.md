@@ -1,6 +1,6 @@
 ## Calendar
 
-### java.util.Calendar.add()
+### Calendar.add()
 ```
 public abstract void add(int field, int amount)
 ```
@@ -8,3 +8,9 @@ public abstract void add(int field, int amount)
 * amount : field에 더할 값. 빼기를 하고 싶다면 마이너스 값을 넣으면 됨
 
 void값을 반환하며 해당 메소드를 호출한 캘린더에 변환된 값이 바로 반영됨
+
+### Calendar.setTimeZone()
+```
+public void setTimeZone(TimeZone value)
+```
+해당 Calendar의 TimeZone을 설정하여 Calendar의 값들이 설정된 TimeZone에 맞게 표시되도록 할 수 있음

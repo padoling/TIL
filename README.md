@@ -24,6 +24,7 @@
 ### Java
 * [Calendar](/java/calendar.md)
 * [Exceptions](/java/exceptions.md)
+* [stream](/java/stream.md)
 
 ### Spring Boot
 * [maven](/spring-boot/maven.md)
