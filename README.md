@@ -22,9 +22,12 @@
 * [SQS](/aws/sqs.md)
 
 ### Java
+* **Design Patterns**
+    * [Builder Pattern](/java/design-pattern/builder-pattern.md)
 * [Calendar](/java/calendar.md)
 * [Exceptions](/java/exceptions.md)
 * [stream](/java/stream.md)
+* [객체 생명주기](/java/life-cycle-of-objects.md)
 
 ### Spring Boot
 * [maven](/spring-boot/maven.md)
