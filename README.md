@@ -36,5 +36,5 @@
 ### Network
 * [SSH](/network/ssh.md)
 
-### Atlassian Tools
+### Tools
 * [confluence](/atlassian/confluence.md)
