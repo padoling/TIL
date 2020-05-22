@@ -33,6 +33,9 @@
 * [maven](/spring-boot/maven.md)
 * [mybatis](/spring-boot/mybatis.md)
 
+### Shell
+* [Zsh](/shell/zsh.md)
+
 ### Network
 * [SSH](/network/ssh.md)
 
