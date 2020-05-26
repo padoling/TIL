@@ -30,6 +30,7 @@
 * [객체 생명주기](/java/life-cycle-of-objects.md)
 
 ### Spring Boot
+* [gradle](/spring-boot/gradle.md)
 * [maven](/spring-boot/maven.md)
 * [mybatis](/spring-boot/mybatis.md)
 
