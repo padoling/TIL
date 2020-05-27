@@ -33,6 +33,7 @@
 * [gradle](/spring-boot/gradle.md)
 * [maven](/spring-boot/maven.md)
 * [mybatis](/spring-boot/mybatis.md)
+* [profile](/spring-boot/profile.md)
 
 ### Shell
 * [Zsh](/shell/zsh.md)
