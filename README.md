@@ -43,5 +43,5 @@
 * [SSH](/network/ssh.md)
 
 ### Tools
-* [confluence](/atlassian/confluence.md)
+* [confluence](/tools/confluence.md)
 * [Travis CI](/tools/travis-ci.md)
