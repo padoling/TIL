@@ -17,6 +17,7 @@
 * [CloudWatch](/aws/cloudwatch.md)
 * [EBS](/aws/ebs.md)
 * [EC2](/aws/ec2.md)
+* [IAM](/aws/iam.md)
 * [lambda](/aws/lambda.md)
 * [S3](/aws/s3.md)
 * [SQS](/aws/sqs.md)
@@ -43,3 +44,4 @@
 
 ### Tools
 * [confluence](/atlassian/confluence.md)
+* [Travis CI](/tools/travis-ci.md)
