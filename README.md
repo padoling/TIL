@@ -15,6 +15,7 @@
 * [AWS 전반](/aws/aws.md)
 * [CloudFront](/aws/cloudfront.md)
 * [CloudWatch](/aws/cloudwatch.md)
+* [CodeDeploy](/aws/codedeploy.md)
 * [EBS](/aws/ebs.md)
 * [EC2](/aws/ec2.md)
 * [IAM](/aws/iam.md)
