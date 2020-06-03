@@ -41,6 +41,7 @@
 * [Zsh](/shell/zsh.md)
 
 ### Network
+* [proxy](/network/proxy.md)
 * [SSH](/network/ssh.md)
 
 ### Tools
