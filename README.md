@@ -33,6 +33,7 @@
 * [객체 생명주기](/java/life-cycle-of-objects.md)
 
 ### JavaScript
+* [JavaScript Grammar](/javascript/grammar.md)
 * [JavaScript Engine](/javascript/js-engine.md)
 
 ### Network
@@ -44,6 +45,7 @@
 
 ### React
 * [Component](/react/component.md)
+* [React event](/react/event.md)
 * [JSX](/react/jsx.md)
 * [React start](/react/react-start.md)
 
