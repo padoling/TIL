@@ -47,6 +47,7 @@
 * [Component](/react/component.md)
 * [React event](/react/event.md)
 * [JSX](/react/jsx.md)
+* [React list & key](/react/list-and-key.md)
 * [React start](/react/react-start.md)
 
 ### Shell
@@ -60,5 +61,5 @@
 * [profile](/spring-boot/profile.md)
 
 ### Tools
-* [confluence](/tools/confluence.md)
+* [Confluence](/tools/confluence.md)
 * [Travis CI](/tools/travis-ci.md)
