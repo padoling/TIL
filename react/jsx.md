@@ -13,12 +13,12 @@
     const element = <h1>Hello, {name}</h1>;
     ```
 * 포함될 수 있는 표현식의 예시
-    * `2 + 2` - 수식
-    * `user.firstName` - 변수
-    * `formatName(user)` - 함수
-    * `return <h1>Hello, {formatName(user)}!</h1>;` - 또다른 JSX
-### 속성 정의
-* 따옴표(`""`)를 사용하여 속성에 문자열 리터럴을 정의할 수 있음
+    * `2 + 2` : 수식
+    * `user.firstName` : 변수
+    * `formatName(user)` : 함수
+    * `return <h1>Hello, {formatName(user)}!</h1>;` : 또다른 JSX
+### 속성(attribute) 정의
+* 따옴표(`""`)를 사용하여 속성으로 문자열을 정의할 수 있음
     ```jsx
     const element = <div tabIndex="0"></div>;
     ```

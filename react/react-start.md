@@ -4,6 +4,7 @@
 * facebook에서 만든 JavaScript 라이브러리
 * 기본적으로 js 파일과 css 파일들의 묶음임
 * **컴포넌트**라는 단위를 이용하여 UI 구성
+* Interactive한 UI 구성이 쉽게 가능하기 때문에 one-page-app을 만드는 데에 많이 사용됨
 
 ## React 시작하기
 ### 새 React 프로젝트 만들기
@@ -23,6 +24,19 @@
         ![react start terminal](/img/react_start_terminal.png)
         * 브라우저  
         ![react start browser](/img/react_start_browser.png)
+### Hello World
+```jsx
+ReactDOM.render(
+    <h1> Hello, world!</h1>
+    document.getElementById('root')
+);
+```
+* `ReactDOM.render()`는 2개의 인자를 받아서 html 화면을 렌더링해줌
+    * 첫 번째 인자 : 렌더링할 DOM
+    * 두 번째 인자 : 첫 번째 인자가 들어가야 할 html 요소
+* 위 예제는 `id`가 `root`인 html 요소를 찾아 `<h1>Hello, world!</h1>`를 그 안에 넣어 렌더링해주는 기능을 함
+* 보통 `ReactDOM.render()`를 한 번만 호출함
+* 렌더링을 변경할 경우, React DOM은 현재의 엘리먼트 상태와 이전의 엘리먼트 상태를 비교하여 **필요한 부분만 변경함**
 
 ## Reference
 * <https://ko.reactjs.org/tutorial/tutorial.html>
