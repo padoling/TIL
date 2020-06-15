@@ -37,8 +37,10 @@
 * [JavaScript Engine](/javascript/js-engine.md)
 
 ### Network
+* [OSI 7 layers](/network/osi-7-layer.md)
 * [proxy](/network/proxy.md)
 * [SSH](/network/ssh.md)
+* [TCP](/network/tcp.md)
 
 ### node
 * [node start](/node/node-start.md)
