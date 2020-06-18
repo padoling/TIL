@@ -35,6 +35,7 @@
 ### JavaScript
 * [JavaScript Grammar](/javascript/grammar.md)
 * [JavaScript Engine](/javascript/js-engine.md)
+* [Web Storage](/javascript/web-storage.md)
 
 ### Network
 * [OSI 7 layers](/network/osi-7-layer.md)
@@ -48,6 +49,7 @@
 ### React
 * [Component](/react/component.md)
 * [React event](/react/event.md)
+* [form](/react/form.md)
 * [JSX](/react/jsx.md)
 * [React list & key](/react/list-and-key.md)
 * [React start](/react/react-start.md)
