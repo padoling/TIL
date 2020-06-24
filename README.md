@@ -56,6 +56,7 @@
 * [JSX](/react/jsx.md)
 * [React list & key](/react/list-and-key.md)
 * [React start](/react/react-start.md)
+* [Redux](/react/redux.md)
 * [state](/react/state.md)
 
 ### Shell
