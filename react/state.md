@@ -4,6 +4,8 @@
 * `props`와 비슷하지만 전혀 다름!
     * `props`는 인자로 전달받은 뒤 값을 변경할 수 없지만, `state`는 `setState()`라는 메소드로 언제든 값을 변경할 수 있음
 
+<br>
+
 ## state 사용법
 * 생성자를 이용하여 초기화
 ```jsx
@@ -36,6 +38,8 @@ render() {
 }
 ```
 
+<br>
+
 ## Mounting
 ### Mounting이란?
 * React에서 DOM에 리소스가 생성되거나 삭제되는 일련의 생명주기를 다루는 용어
@@ -46,6 +50,8 @@ render() {
 * `componentDidMount()` : After-mount
 * `componentWillUnmount()` : Before-unmount
 * `componentDidUnmount()` : After-unmount
+
+<br>
 
 ## Reference
 * <https://ko.reactjs.org/docs/state-and-lifecycle.html>

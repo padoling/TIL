@@ -1,6 +1,6 @@
-## CloudFront
+# CloudFront
 
-### CloudFront란?
+## CloudFront란?
 * 사용자의 위치에서 리소스를 캐싱하여 더 빠르게 접근할 수 있도록 해주는 **CDN**(Content Delivery Network) 서비스
 * 네트워크 사용량이 줄기 때문에 인스턴스 사용 비용이 줄어듦
 * 서버에 문제가 발생해서 접근할 수 없어도 캐싱된 데이터가 있기 때문에 사용자 입장에서는 문제가 없게 만들 수 있음

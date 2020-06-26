@@ -4,6 +4,8 @@
 * JIT(Just-in-time) 컴파일 기법을 사용함
 * 다양한 엔진들이 있으며, 대표적으로 Chrome 브라우저와 Node.js에서 사용하는 **Google V8**이 있음
 
+<br>
+
 ## JS Engine 파이프라인
 ![js engine pipeline](/img/js_engine_pipeline.png)
 자바스크립트 엔진들이 소스코드를 기계어로 만들기까지 공통적으로 수행하는 과정
@@ -22,6 +24,8 @@
 * 매우 최적화된 machine code를 시간을 들여서 생성함
 * 효율적인 코드를 만들지만 좀 더 시간이 걸림
 
+<br>
+
 ## JS Engine의 구성요소
 ### Call Stack(호출 스택)
 * 실행되는 함수를 쌓는 스택
@@ -34,6 +38,8 @@
 ### Memory Heap
 * 메모리 할당이 일어나는 곳
 * 동적으로 생성된 객체가 할당됨
+
+<br>
 
 ## Reference
 * <https://k39335.tistory.com/9>

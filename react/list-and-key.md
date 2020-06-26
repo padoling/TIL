@@ -11,6 +11,9 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+<br>
+
 ## key 부여하기
 * React에서는 리스트에 반드시 key 값을 부여해야 함
 * 위 코드와 같이 작성하면 key를 넣어야 한다는 경고가 표시됨
@@ -55,6 +58,8 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+<br>
 
 ## Reference
 * <https://beomy.tistory.com/29>

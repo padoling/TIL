@@ -1,7 +1,7 @@
-## CodeDeploy
+# CodeDeploy
 
-### EC2에서 CodeDeploy를 사용하여 배포 자동화하기
-#### CodeDeploy 시작하기
+## EC2에서 CodeDeploy를 사용하여 배포 자동화하기
+### CodeDeploy 시작하기
 1. IAM 사용자 셋팅
     * EC2에서 AWS CLI를 사용할 수 있도록 IAM 사용자를 생성하고, CodeDeploy와 CodeDeploy에서 사용하는 서비스에 액세스할 권한 부여
     * 예시
@@ -55,7 +55,9 @@
         $ aws s3 cp s3://aws-codedeploy-ap-northeast-2/latest/install . --region ap-northeast-2
         ```
 
-#### CodeDeploy 생성
+<br>
+
+### CodeDeploy 생성
 1. 애플리케이션 생성
     * 애플리케이션 이름과 컴퓨팅 플랫폼 선택
     * EC2 서버에 배포하고 싶은 경우 `EC2/온프레미스` 선택
@@ -83,7 +85,9 @@
             * 배포 구성 : 현재 위치의 배포 구성과 같음.
         - 로드 밸런서 : 무조건 활성화되어 있어야 함.
 
-#### appspec.yml
+<br>
+
+### appspec.yml
 - CodeDeploy 설정을 담은 파일. 배포할 압축 파일에 포함되어 있어야 함.
 - 예시
     ```yaml
@@ -119,5 +123,7 @@
         runas: root
     ```
 
-### Reference
+<br>
+
+## Reference
 <https://docs.aws.amazon.com/ko_kr/codedeploy/latest/userguide/welcome.html>

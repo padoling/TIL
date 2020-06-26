@@ -6,6 +6,8 @@
 * **컴포넌트**라는 단위를 이용하여 UI 구성
 * Interactive한 UI 구성이 쉽게 가능하기 때문에 one-page-app을 만드는 데에 많이 사용됨
 
+<br>
+
 ## React 시작하기
 ### 새 React 프로젝트 만들기
 > [새로운 React 앱 만들기](https://ko.reactjs.org/docs/create-a-new-react-app.html#create-react-app)
@@ -37,6 +39,8 @@ ReactDOM.render(
 * 위 예제는 `id`가 `root`인 html 요소를 찾아 `<h1>Hello, world!</h1>`를 그 안에 넣어 렌더링해주는 기능을 함
 * 보통 `ReactDOM.render()`를 한 번만 호출함
 * 렌더링을 변경할 경우, React DOM은 현재의 엘리먼트 상태와 이전의 엘리먼트 상태를 비교하여 **필요한 부분만 변경함**
+
+<br>
 
 ## Reference
 * <https://ko.reactjs.org/tutorial/tutorial.html>

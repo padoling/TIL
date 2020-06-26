@@ -15,6 +15,8 @@
 #### `inline-block`
 * 줄바꿈이 되지 않지만 크기를 지정할 수 있음
 
+<br>
+
 ## overflow
 * 어떤 요소의 내용이 너무 많아서 요소의 크기를 벗어날 경우 어떻게 처리할지 결정
 ### 속성
@@ -27,6 +29,8 @@
 * 스크롤바가 생성됨
 #### `auto`
 * `scroll`처럼 스크롤바가 생성되지만, 필요한 경우에만 생성됨
+
+<br>
 
 ## Reference
 * <https://ofcourse.kr/css-course/display-%EC%86%8D%EC%84%B1>

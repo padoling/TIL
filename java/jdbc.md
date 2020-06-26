@@ -6,12 +6,16 @@
 * 데이터베이스 또는 기타 써드파티에서는 JDBC 인터페이스를 구현한 **드라이버(driver)** 를 제공
 ![jdbc](/img/jdbc.png)
 
+<br>
+
 ## 영속성(Persistence)
 * 데이터를 생성한 프로그램의 실행이 종료되더라도 사라지지 않는 데이터의 특성
 * 데이터베이스, 파일 시스템 등에 저장되어 프로그램 종료 시에도 사라지지 않는 데이터를 **영속성을 갖는다**고 말함
 ### Persistence Layer
 * 프로그램 아키텍처에서, 데이터에 영속성을 부여해주는 계층
 * JDBC를 이용하여 직접 구현할 수 있지만, 주로 Persistence framework를 이용하여 개발함
+
+<br>
 
 ## Persistence Framework
 * 데이터의 저장, 조회, 변경, 삭제를 다루는 클래스 및 설정 파일들의 집합
@@ -24,6 +28,9 @@
     * 데이터베이스 객체를 자바 객체로 매핑함으로써 SQL을 자동으로 생성해주는 형태의 Persistence Framework
     * 자바 객체를 통해 간접적으로 데이터베이스 데이터를 다룸
     * **JPA**, **Hibernate** 등이 포함됨
+
+<br>
+
 ## Reference
 * <https://gmlwjd9405.github.io/2018/12/25/difference-jdbc-jpa-mybatis.html>
 * <https://hzoou.tistory.com/64>

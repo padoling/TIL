@@ -5,6 +5,8 @@
 * JavaScript 애플리케이션의 복잡성을 줄여주기 위한 도구
 * 복잡성을 줄여 애플리케이션의 상태를 **예측 가능하게** 만들어 줌
 
+<br>
+
 ## Redux를 사용하는 이유
 ### 종속성 제거
 * `state`를 `store`라는 공간에 한데 모아 저장하기 때문에 각 모듈 간 `props`를 통해 이어지던 종속성이 획기적으로 줄어들게 됨
@@ -16,6 +18,8 @@
     ```js
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     ```
+
+<br>
 
 ## Redux의 작동 원리
 ![Redux Architecture](/img/redux_architecture.jpeg)
@@ -38,6 +42,8 @@ var store = Redux.createStore(reducer);
 * `store.dispatch(action)` : store에 애플리케이션의 상태를 수정해달라는 요청을 보내서 reducer를 호출
 * `store.subscribe(render)` : state의 상태가 바뀔 때마다 인자로 들어간 render가 자동으로 호출되어 화면을 다시 렌더링하도록 함
 
+<br>
+
 ## container로 redux에 대한 종속성 제거
 * redux를 사용하면 react component 간의 종속성은 사라지지만, **redux store의 state에 대한 종속성을 갖게 됨**
 * 만약 component를 다른 앱에서 재사용하고 싶다면 이러한 redux에 대한 종속성을 없애야 함
@@ -49,6 +55,8 @@ var store = Redux.createStore(reducer);
 ### Container component
 * Presentational component를 감싸서 해당 component가 redux를 사용할 수 있도록 함
 * `store.getState()`나 `store.dispatch()`와 같이 redux와 관련된 로직을 분리해서 Container component에 넣음
+
+<br>
 
 ## Reference
 * <https://redux.js.org/>

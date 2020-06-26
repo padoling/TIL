@@ -1,6 +1,6 @@
-## Calendar
+# Calendar
 
-### Calendar.add()
+## Calendar.add()
 ```
 public abstract void add(int field, int amount)
 ```
@@ -9,7 +9,9 @@ public abstract void add(int field, int amount)
 
 void값을 반환하며 해당 메소드를 호출한 캘린더에 변환된 값이 바로 반영됨
 
-### Calendar.setTimeZone()
+<br>
+
+## Calendar.setTimeZone()
 ```
 public void setTimeZone(TimeZone value)
 ```

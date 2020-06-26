@@ -94,6 +94,8 @@ class Reservation extends React.Component {
 
 ```
 
+<br>
+
 ## Controlled tags
 ### textarea
 * 원래 `textarea`는 태그 안에 표시할 값을 적지만, React에서는 **`value` 속성에 값을 적음**
@@ -172,6 +174,8 @@ class FlavorForm extends React.Component {
   }
 }
 ```
+
+<br>
 
 ## Reference
 * <https://reactjs.org/docs/forms.html>

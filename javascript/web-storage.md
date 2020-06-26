@@ -6,6 +6,8 @@
 * 쿠키의 데이터는 서버에 요청 시 함께 전달하기 위한 것이지만, 웹 스토리지 객체는 서버로 전달되지 않음
 * 쿠키와 달리 서버가 HTTP 헤더를 통해 웹 스토리지 객체를 조작할 수 없음
 
+<br>
+
 ## localStorage와 sessionStorage의 차이점
 ### localStorage
 * 데이터 만료 기간이 없음
@@ -13,6 +15,8 @@
 ### sessionStorage
 * 브라우저 탭이 유지되는 동안만 데이터가 유지됨
 * 탭을 새로고침할 때 데이터는 유지되나, 탭을 닫았다 열었을 경우 데이터는 사라짐
+
+<br>
 
 ## web storage 메소드
 * `setItem(key, value)` : 키 - 값 쌍을 보관
@@ -22,6 +26,8 @@
 * `clear()` : 스토리지의 모든 값 삭제
 * `key(index)` : 인덱스에 해당하는 키를 가져옴
 * `length` : 저장된 데이터의 개수를 가져옴
+
+<br>
 
 ## Reference
 * <https://ko.javascript.info/localstorage>

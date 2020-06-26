@@ -5,6 +5,8 @@
     * 관심사 분리(Separation of concerns) : 프로그램의 단위를 각 관심사(concern)에 따라 분리하는 것
 * JSX를 사용하면 컴포넌트에 UI 관련 마크업을 직관적이고 쉽게 포함할 수 있음
 
+<br>
+
 ## JSX 문법
 ### JSX에 표현식 포함하기
 * 중괄호(`{}`) 안에 모든 JavaScript 표현식을 넣을 수 있음
@@ -43,6 +45,8 @@ const element = (
 const element =  <img src={user.avatarUrl} />;
 ```
 
+<br>
+
 ## JSX 특징
 ### 주입 공격(Injection Attack) 방지
 * **ReactDOM**이 JSX를 렌더링하기 전에 모든 값을 **이스케이프(escape)** 시켜 문자열로 변환함
@@ -67,6 +71,8 @@ const element = React.createElement(
 ```
 * `React.createElement()`가 `React element`라고 불리는 일종의 object를 생성함
 * React는 이 object를 읽고 DOM을 구성하는 데 사용함
+
+<br>
 
 ## Reference
 * <https://ko.reactjs.org/docs/introducing-jsx.html>

@@ -101,6 +101,8 @@ for i in ${array[@]}; do
 done
 ```
 
+<br>
+
 ## Reference
 * <https://blog.gaerae.com/2015/01/bash-hello-world.html>
 * <https://twpower.github.io/131-simple-shell-script-syntax>

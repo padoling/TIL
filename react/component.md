@@ -4,6 +4,8 @@
 * JavaScript의 함수와 유사한 개념
 * `props`라는 임의의 입력을 받은 후, **React 엘리먼트**를 반환함
 
+<br>
+
 ## 컴포넌트 정의
 ### 함수 컴포넌트
 ```js
@@ -27,6 +29,8 @@ class Welcome extends React.Component {
 * 인자를 따로 명시하지 않아도 `props`가 존재하는 듯
 * 클래스 컴포넌트 내부에는 `render()` 메소드가 반드시 존재해야 함
     * `render()` 내부에서 React 엘리먼트 반환
+
+<br>
 
 ## 컴포넌트 렌더링
 ### 사용자 정의 컴포넌트로 React 엘리먼트 만들기
@@ -56,6 +60,8 @@ ReactDOM.render(
 4. React DOM이 위 엘리먼트와 알치하도록 DOM을 효율적으로 업데이트
     * ❕컴포넌트 이름은 항상 대문자로 시작함❕
 
+<br>
+
 ## props 사용 시 주의할 점
 * 컴포넌트 내에서 **props를 수정해서는 안됨!**
 * React 컴포넌트는 반드시 **순수 함수**처럼 동작해야 함
@@ -84,6 +90,8 @@ ReactDOM.render(
 * React에서 렌더링 시기 결정
     * 순수 객체(pure components)를 만들기 용이함
     * 변화를 감지하기 쉽기 때문에 다시 렌더링할 시점을 결정하기 쉬움
+
+<br>
 
 ## Reference
 * <https://ko.reactjs.org/docs/components-and-props.html>

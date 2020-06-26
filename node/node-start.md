@@ -5,11 +5,13 @@
     * 런타임 : 프로그래밍 언어가 구동되는 환경
 * 서버를 선언할 수 있어 백엔드로 쓸 수 있음
 
+<br>
+
 ## Node 시작하기
 ### 설치
 1. npm 설치
-    * `brew install npm`
     * **npm** : Node Packaged Manager, Node로 만들어진 패키지를 관리하는 툴
+    * `brew install npm`
 2. node 설치
     * `brew install node` ← npm을 설치하면 같이 설치되어 있는 듯
 3. `app.js`를 만들어서 서버를 선언하고 실행

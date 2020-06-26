@@ -27,6 +27,8 @@ function ActionLink() {
 }
 ```
 
+<br>
+
 ## Synthetic event
 * 리액트는 이벤트 핸들러에 이벤트를 전달할 때 `SyntheticEvent` 인스턴스를 전달함
 * 브라우저의 native 이벤트를 래핑한 것이기 때문에 native 이벤트의 인터페이스를 동일하게 사용할 수 있음
@@ -35,6 +37,8 @@ function ActionLink() {
 * `SyntheticEvent`는 성능상의 이유로 풀링됨
   * 즉, `SyntheticEvent` 객체는 재사용되고 속성들은 이벤트 핸들러가 호출된 후에 초기화됨
 * 따라서 이벤트 객체에 비동기적으로 접근할 수 없음
+
+<br>
 
 ## this 바인딩
 ### this란?
@@ -92,6 +96,7 @@ function ActionLink() {
   }
   ```
 
+<br>
 
 ## Reference
 * <https://blog.sonim1.com/179>
