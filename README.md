@@ -48,6 +48,7 @@
 
 ### node
 * [node start](/node/node-start.md)
+* [module](/node/node-module.md)
 
 ### React
 * [Component](/react/component.md)
