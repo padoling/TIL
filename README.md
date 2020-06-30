@@ -49,6 +49,7 @@
 ### node
 * [node start](/node/node-start.md)
 * [module](/node/node-module.md)
+* [PM2](/node/pm2.md)
 
 ### React
 * [Component](/react/component.md)
