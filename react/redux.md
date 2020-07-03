@@ -32,12 +32,34 @@ var store = Redux.createStore(reducer);
 ### state
 * 실제 값들이 저장됨
 * 외부에서 직접 접근하는 것은 불가능하며, `store.getState()`를 통해 값을 가져올 수 있음
+```js
+var state = store.getState();
+```
 ### reducer
 * 현재 `state`와 `action`을 인자로 받은 뒤 새로운 `state`를 반환함
 * 즉, 현재 `state`를 바탕으로 `action`을 참고하여 새로운 `state`를 만들어냄
+```js
+function reducer(state, action) {
+  switch(action.type) {
+    case "CHANGE_COLOR":
+      return {
+        ...state,
+        color: action.color
+      }
+    default:
+      return {
+        color: "yellow"
+      }
+  }
+}
+```
 ### action
 * `state`의 상태를 어떻게 변화시킬지 방법을 정의함
 * `action` 객체는 항상 `type`이라는 key를 포함해야 함
+```js
+// dispatch() 내부의 객체가 action
+store.dispatch({type: 'CHANGE_COLOR', color: 'blue'})
+```
 ### Redux 관련 메소드
 * `store.dispatch(action)` : store에 애플리케이션의 상태를 수정해달라는 요청을 보내서 reducer를 호출
 * `store.subscribe(render)` : state의 상태가 바뀔 때마다 인자로 들어간 render가 자동으로 호출되어 화면을 다시 렌더링하도록 함
@@ -55,6 +77,44 @@ var store = Redux.createStore(reducer);
 ### Container component
 * Presentational component를 감싸서 해당 component가 redux를 사용할 수 있도록 함
 * `store.getState()`나 `store.dispatch()`와 같이 redux와 관련된 로직을 분리해서 Container component에 넣음
+
+<br>
+
+## React-Redux
+* React에서 Redux를 편리하게 사용할 수 있도록 만들어진 라이브러리
+
+### Provider
+* Redux의 `store`를 어디서든 사용할 수 있게 해 주는 컴포넌트
+* 최상위 컴포넌트를 감싸도록 작성하면 앱 전체에서 `store`에 접근할 수 있음
+* `props`로 반드시 `store`를 넘겨줘야 함
+```jsx
+<Provider store={store}>
+  <App />
+</Provider>
+```
+
+### connect
+* Container component의 역할을 쉽게 할 수 있도록 redux와 관련된 `props`를 component에 넘겨주는 메소드
+* `state`와 `dispatch`와 관련된 객체를 처리하는 두 개의 함수를 인자로 받아 component에 `props`로 전달해주는 함수를 반환함
+```jsx
+// Redux store의 state를 React component의 props로 전달
+function mapStateToProps(state) {
+  return {
+    color: state.color
+  };
+}
+
+// Redux의 dispatch 메소드를 처리하는 함수를 React component의 props로 전달
+function mapDispatchToProps(dispatch) {
+  return {
+    onClick: color => {
+      dispatch({type: "CHANGE_COLOR", color: color});
+    }
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SomeComponent);
+```
 
 <br>
 
