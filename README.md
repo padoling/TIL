@@ -43,6 +43,7 @@
 ### Network
 * [OSI 7 layers](/network/osi-7-layer.md)
 * [proxy](/network/proxy.md)
+* [Session & Cookie](/network/session-cookie.md)
 * [SSH](/network/ssh.md)
 * [TCP](/network/tcp.md)
 
@@ -50,6 +51,7 @@
 * [node start](/node/node-start.md)
 * [module](/node/node-module.md)
 * [PM2](/node/pm2.md)
+* [sanitize-html](/node/sanitize-html.md)
 
 ### React
 * [Component](/react/component.md)
