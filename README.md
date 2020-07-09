@@ -70,6 +70,7 @@
 
 ### Spring Boot
 * [gradle](/spring-boot/gradle.md)
+* [Spring Boot JPA](/spring-boot/jpa.md)
 * [maven](/spring-boot/maven.md)
 * [mybatis](/spring-boot/mybatis.md)
 * [profile](/spring-boot/profile.md)
