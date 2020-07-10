@@ -70,10 +70,11 @@
 
 ### Spring Boot
 * [gradle](/spring-boot/gradle.md)
-* [Spring Boot JPA](/spring-boot/jpa.md)
+* [JPA](/spring-boot/jpa.md)
 * [maven](/spring-boot/maven.md)
 * [mybatis](/spring-boot/mybatis.md)
 * [profile](/spring-boot/profile.md)
+* [Spring Rest Docs](/spring-boot/spring-rest-docs.md)
 
 ### Tools
 * [Confluence](/tools/confluence.md)
