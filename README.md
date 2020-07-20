@@ -76,6 +76,7 @@
 * [maven](/spring-boot/maven.md)
 * [mybatis](/spring-boot/mybatis.md)
 * [profile](/spring-boot/profile.md)
+* [Spring Boot Test](/spring-boot/spring-boot-test.md)
 * [Spring Rest Docs](/spring-boot/spring-rest-docs.md)
 
 ### Tools
