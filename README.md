@@ -71,6 +71,7 @@
 
 ### Spring Boot
 * [Spring Boot start](/spring-boot/spring-boot-start.md)
+* [cors](/spring-boot/cors.md)
 * [gradle](/spring-boot/gradle.md)
 * [JPA](/spring-boot/jpa.md)
 * [maven](/spring-boot/maven.md)
