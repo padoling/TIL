@@ -79,6 +79,7 @@
 * [profile](/spring-boot/profile.md)
 * [Spring Boot Test](/spring-boot/spring-boot-test.md)
 * [Spring Rest Docs](/spring-boot/spring-rest-docs.md)
+* [Swagger](/spring-boot/swagger.md)
 
 ### Tools
 * [Confluence](/tools/confluence.md)
