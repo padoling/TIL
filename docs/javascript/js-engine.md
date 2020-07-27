@@ -7,8 +7,8 @@
 <br>
 
 ## JS Engine 파이프라인
-![js engine pipeline](/img/js_engine_pipeline.png)
-자바스크립트 엔진들이 소스코드를 기계어로 만들기까지 공통적으로 수행하는 과정
+![js engine pipeline](../img/js_engine_pipeline.png)
+* 자바스크립트 엔진들이 소스코드를 기계어로 만들기까지 공통적으로 수행하는 과정
 1. JavaScript 코드 파싱 ⇨ **Abstract Syntax Tree(AST)** 로 변환
 2. AST를 바탕으로 interpreter가 **bytecode** 생성
 3. 코드를 더 빠르게 실행하기 위해 **optimizing compiler(최적화 컴파일러)** 로 바이트코드 보내짐 ⇨ profiling data를 기반으로 optimized machine code 생성
@@ -27,11 +27,12 @@
 <br>
 
 ## JS Engine의 구성요소
+
 ### Call Stack(호출 스택)
 * 실행되는 함수를 쌓는 스택
 * 자바스크립트는 **단 하나의 호출 스택**을 사용함
     * 즉, 하나의 함수가 실행되면 그 함수의 실행이 끝날 때까지 다른 어떤 task도 수행될 수 없음
-![js call stack](/img/js_call_stack.png)
+![js call stack](../img/js_call_stack.png)
 * **스택 프레임(Stack Frame)** : 호출 스택의 각 단계를 의미
 * **스택 트레이스(Stack Trace)**: 에러가 발생했을 때, 에러가 발생하기까지의 스택 단계
 

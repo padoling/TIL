@@ -1,4 +1,5 @@
 # TCP
+
 ## TCP란?
 * 연결형 서비스를 지원하는 인터넷 프로토콜
 * 연결 및 종료 시 여러 단계에 걸쳐 연결 및 종료를 보장하므로 안정성이 있음
@@ -11,7 +12,7 @@
 * 연결 시에는 3-way, 종료 시에는 4-way로 이루어짐
 * 연결이나 종료를 시작하는 쪽은 항상 클라이언트 쪽으로, **서버 쪽에서는 먼저 연결을 시작하거나 종료할 수 없음**
 
-![handshake](/img/34_handshake.png)
+![handshake](../img/34_handshake.png)
 
 ### 패킷 의미
 * SYN : Synchronize sequence Numbers

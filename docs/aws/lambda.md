@@ -58,7 +58,7 @@ public class LambdaRequestHandler implements RequestHandler<String, String> {
 
 ### 3. 빌드하기
 maven shade를 이용해 다음 명령어로 빌드하면, target 폴더에 jar 파일이 생성된다.
-```terminal
+```bash
 $ mvn clean package shade:shade
 ```
 
@@ -66,14 +66,14 @@ $ mvn clean package shade:shade
 AWS 콘솔에서 lambda 함수를 생성한다. 생성 방법은 다음과 같다.  
 1) `서비스 > lambda` 선택 후 대시보드에서 `함수 생성` 선택  
 2) `새로 작성` 옵션을 선택하고 런타임을 원하는 언어로 설정(여기서는 Java 8)  
-![Lambda Tutorial 1](/img/lambda_tutorial_1.png)  
+![Lambda Tutorial 1](../img/lambda_tutorial_1.png)  
 3) 생성한 함수의 `함수 코드` 탭에서 핸들러를 방금 만든 핸들러 메소드로 설정해 주고, 함수 패키지에 **jar 파일을 업로드**  
-![Lambda Tutorial 2](/img/lambda_tutorial_2.png)  
+![Lambda Tutorial 2](../img/lambda_tutorial_2.png)  
 트리거를 추가하거나 다양한 설정을 변경할 수도 있으나, 튜토리얼이기 때문에 아주 간단하게만 설정하였다.
 
 ### 테스트
 함수 탭의 상단에 있는 `테스트` 버튼을 눌러서 input값을 설정하고 람다 함수를 테스트해볼 수 있다. 테스트의 성공/실패 여부에 관계 없이 상세한 실행 정보와 로그를 확인할 수 있다.  
-![Lambda Tutorial 3](/img/lambda_tutorial_3.png)  
+![Lambda Tutorial 3](../img/lambda_tutorial_3.png)  
 
 <br>
 

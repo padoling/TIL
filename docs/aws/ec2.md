@@ -70,22 +70,21 @@
 ## 맥북에서 EC2 접속하기
 
 1. pem키 복사하기
-```
+```bash
 cp [pem키의 위치] ~/.ssh/
 ```
 위 명령어를 통해 ec2의 pem키를 .ssh 폴더 안에 복사한다. 이렇게 하면 ssh 실행 시 pem키 파일을 자동으로 읽어 접속한다.
 
 2. 권한 설정
-```
+```bash
 chmod 600 ~/.ssh/[pem키 이름]
 ```
 
 3. config 파일에 Host 등록
-```
+```bash
 vi ~/.ssh/config
 
-
-# config 파일 아래와 같이 수정
+ # config 파일 아래와 같이 수정
 Host [원하는 서비스 명]
     HostName [ec2의 탄력적 IP 주소]
     User ec2-user
@@ -93,11 +92,11 @@ Host [원하는 서비스 명]
 ```
 
 4. config 파일 실행 권한 설정
-```
+```bash
 chmod 700 ~/.ssh/config
 ```
 
 5. ssh 접속
-```
+```bash
 ssh [config에서 등록한 서비스 명]
 ```

@@ -16,6 +16,7 @@
 
 ## proxy server
 * proxy를 수행하는 프로그램 또는 컴퓨터
+
 ### 종류
 * **포워드 프록시(forward proxy)**
     * 클라이언트가 서버에 리퀘스트를 보낼 때, 프록시 서버를 통해 요청하는 방식
@@ -23,7 +24,7 @@
     * 인터넷보다 프록시 서버가 먼저 호출됨
     * 서버에게 클라이언트가 누구인지 감추는 역할
 
-![forward proxy](/img/forward_proxy.jpeg)
+![forward proxy](../img/forward_proxy.jpeg)
 
 * **리버스 프록시(reverse proxy)**
     * 클라이언트가 서버에 리퀘스트를 보내면 프록시 서버가 대신 서버의 응답을 전달하는 방식
@@ -31,7 +32,7 @@
     * 내부망에 있는 서버를 호출하기 위해 인터넷 망에서 프록시 서버에 요청을 보냄
     * 클라이언트에게 서버가 누구인지 감추는 역할
 
-![reverse proxy](/img/reverse_proxy.jpeg)
+![reverse proxy](../img/reverse_proxy.jpeg)
 
 <br>
 
