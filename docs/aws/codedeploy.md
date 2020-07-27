@@ -1,45 +1,46 @@
 # CodeDeploy
 
 ## EC2에서 CodeDeploy를 사용하여 배포 자동화하기
+
 ### CodeDeploy 시작하기
 1. IAM 사용자 셋팅
-    * EC2에서 AWS CLI를 사용할 수 있도록 IAM 사용자를 생성하고, CodeDeploy와 CodeDeploy에서 사용하는 서비스에 액세스할 권한 부여
-    * 예시
-        ```json
+  * EC2에서 AWS CLI를 사용할 수 있도록 IAM 사용자를 생성하고, CodeDeploy와 CodeDeploy에서 사용하는 서비스에 액세스할 권한 부여
+  * 예시
+    ```json
+    {
+    "Version": "2012-10-17",
+    "Statement" : [
         {
-        "Version": "2012-10-17",
-        "Statement" : [
-            {
-            "Effect" : "Allow",
-            "Action" : [
-                "autoscaling:*",
-                "codedeploy:*",
-                "ec2:*",
-                "lambda:*",
-                "ecs:*",
-                "elasticloadbalancing:*",
-                "iam:AddRoleToInstanceProfile",
-                "iam:CreateInstanceProfile",
-                "iam:CreateRole",
-                "iam:DeleteInstanceProfile",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:GetInstanceProfile",
-                "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:ListInstanceProfilesForRole",
-                "iam:ListRolePolicies",
-                "iam:ListRoles",
-                "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile", 
-                "s3:*"
-            ],
-            "Resource" : "*"
-            }    
-        ]
-        }
-        ```
+        "Effect" : "Allow",
+        "Action" : [
+            "autoscaling:*",
+            "codedeploy:*",
+            "ec2:*",
+            "lambda:*",
+            "ecs:*",
+            "elasticloadbalancing:*",
+            "iam:AddRoleToInstanceProfile",
+            "iam:CreateInstanceProfile",
+            "iam:CreateRole",
+            "iam:DeleteInstanceProfile",
+            "iam:DeleteRole",
+            "iam:DeleteRolePolicy",
+            "iam:GetInstanceProfile",
+            "iam:GetRole",
+            "iam:GetRolePolicy",
+            "iam:ListInstanceProfilesForRole",
+            "iam:ListRolePolicies",
+            "iam:ListRoles",
+            "iam:PassRole",
+            "iam:PutRolePolicy",
+            "iam:RemoveRoleFromInstanceProfile", 
+            "s3:*"
+        ],
+        "Resource" : "*"
+        }    
+      ]
+    }
+      ```
 2. EC2에 AWS CLI 설치
     * CodeDeploy를 호출하기 위해서 AWS CLI가 필요함(CLI 1.6.1 버전부터 사용 가능)
     * CLI 구성시 1번에서 만든 IAM 사용자의 key 사용
@@ -54,8 +55,6 @@
         ```bash
         $ aws s3 cp s3://aws-codedeploy-ap-northeast-2/latest/install . --region ap-northeast-2
         ```
-
-<br>
 
 ### CodeDeploy 생성
 1. 애플리케이션 생성
@@ -85,8 +84,6 @@
             * 배포 구성 : 현재 위치의 배포 구성과 같음.
         - 로드 밸런서 : 무조건 활성화되어 있어야 함.
 
-<br>
-
 ### appspec.yml
 - CodeDeploy 설정을 담은 파일. 배포할 압축 파일에 포함되어 있어야 함.
 - 예시
@@ -95,30 +92,30 @@
     version: 0.0
     os: linux
     files:
-            # revision 폴더의 루트에서 시작하는 상대 경로
-    - source: /
-            # 배포될 위치. source에서 지정한 파일들이 복사될 위치.
+        #revision 폴더의 루트에서 시작하는 상대 경로
+      - source: /
+        # 배포될 위치. source에서 지정한 파일들이 복사될 위치.
         destination: /var/www/html/WordPress
     # 배포 단계별로 진행되어야 할 이벤트 명시
     hooks:
     BeforeInstall:
-                # 실행될 이벤트가 적힌 스크립트 위치
-        - location: scripts/install_dependencies.sh
-                # 스크립트 실행에 허용되는 최대 시간
+        # 실행될 이벤트가 적힌 스크립트 위치
+      - location: scripts/install_dependencies.sh
+        # 스크립트 실행에 허용되는 최대 시간
         timeout: 300
-                # 스크립트 실행할 사용자
+        # 스크립트 실행할 사용자
         runas: root
     AfterInstall:
-        - location: scripts/change_permissions.sh
+      - location: scripts/change_permissions.sh
         timeout: 300
         runas: root
     ApplicationStart:
-        - location: scripts/start_server.sh
-        - location: scripts/create_test_db.sh
+      - location: scripts/start_server.sh
+      - location: scripts/create_test_db.sh
         timeout: 300
         runas: root
     ApplicationStop:
-        - location: scripts/stop_server.sh
+      - location: scripts/stop_server.sh
         timeout: 300
         runas: root
     ```

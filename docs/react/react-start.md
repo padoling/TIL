@@ -23,9 +23,9 @@
     * `npm start`
     * 실행 성공 시 다음과 같은 화면을 볼 수 있음
         * 터미널  
-        ![react start terminal](/img/react_start_terminal.png)
+        ![react start terminal](../img/react_start_terminal.png)
         * 브라우저  
-        ![react start browser](/img/react_start_browser.png)
+        ![react start browser](../img/react_start_browser.png)
 ### Hello World
 ```jsx
 ReactDOM.render(
