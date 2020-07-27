@@ -74,6 +74,8 @@ public class UserController {
     //...
 }
 ```
+### 주의!
+`OPTIONS`로 Preflight 요청을 보낼 시 응답은 항상 `200`이 와야 하므로, 만약 서비스에 `Interceptor` 등으로 각종 인증을 설정한 경우 `OPTIONS` 요청에는 적용되지 않도록 설정해줘야 한다.
 
 <br>
 

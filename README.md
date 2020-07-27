@@ -30,6 +30,7 @@
 * **Design Patterns**
     * [Builder Pattern](/java/design-pattern/builder-pattern.md)
     * [Dependency Injection](/java/design-pattern/dependency-injection.md)
+    * [Singleton Pattern](/java/design-pattern/singleton-pattern)
 * [Calendar](/java/calendar.md)
 * [Exceptions](/java/exceptions.md)
 * [JDBC](/java/jdbc.md)
