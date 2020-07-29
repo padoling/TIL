@@ -52,6 +52,7 @@
   * [form](/react/form.md)
   * [JSX](/react/jsx.md)
   * [React list & key](/react/list-and-key.md)
+  * [React router](/react/react-router.md)
   * [Redux](/react/redux.md)
   * [state](/react/state.md)
   * [Styled Components](/react/styled-components.md)
