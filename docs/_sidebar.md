@@ -64,6 +64,7 @@
 * Spring Boot
   * [Spring Boot start](/spring-boot/spring-boot-start.md)
   * [cors](/spring-boot/cors.md)
+  * [Ehcache](/spring-boot/ehcache.md)
   * [gradle](/spring-boot/gradle.md)
   * [JPA](/spring-boot/jpa.md)
   * [maven](/spring-boot/maven.md)
@@ -74,5 +75,4 @@
   * [Swagger](/spring-boot/swagger.md)
 
 * Tools
-  * [Confluence](/tools/confluence.md)
   * [Travis CI](/tools/travis-ci.md)
