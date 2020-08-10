@@ -19,11 +19,11 @@
 ### dependency 추가
 ```groovy
 dependencies {
-  //...
-  implementation 'org.springframework.boot:spring-boot-starter-web'
-  implementation 'org.springframework.boot:spring-boot-starter-cache'
-  implementation 'javax.cache:cache-api:1.1.1'
-  implementation 'org.ehcache:ehcache:3.8.1'
+    //...
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'javax.cache:cache-api:1.1.1'
+    implementation 'org.ehcache:ehcache:3.8.1'
 }
 ```
 
@@ -100,7 +100,7 @@ public BigDecimal square(Long number) {
 }
 ```
 * xml에서 지정한 `squareCache`라는 이름의 캐시를 사용하겠다는 의미
-* 따로 지저하지 않으면 해당 메소드의 파라미터를 key로 사용하여 return 값을 캐싱함
+* 따로 지정하지 않으면 해당 메소드의 파라미터를 key로 사용하여 return 값을 캐싱함
 
 #### `@CacheEvict`
 ```java

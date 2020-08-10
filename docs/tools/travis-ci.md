@@ -1,4 +1,5 @@
 # Travis CI
+
 ## Travis CI란?
 * CI(Continuous Integration, 지속적 통합) 툴의 일종으로, Github과 Bitbucket Repository와 연동하여 빌드, 테스팅 및 배포 자동화를 돕는 서비스
 * 오픈소스 프로젝트에 한해 무료로 이용할 수 있음

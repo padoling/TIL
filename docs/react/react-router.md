@@ -1,4 +1,5 @@
 # React Router
+
 ## React Router란?
 * React의 네비게이션 라이브러리
 * 웹 페이지에서 **Router**란 사용자가 접속하는 URI에 따라 다른 페이지를 나타내는 것을 의미함
@@ -8,13 +9,14 @@
 <br>
 
 ## 설치
-```bash
+```shell
 npm i react-router-dom
 ```
 
 <br>
 
 ## 사용하기
+
 ### Link 컴포넌트
 * 이동할 경로를 지정하는 컴포넌트
 * `to` prop을 통해 경로를 지정
@@ -22,32 +24,35 @@ npm i react-router-dom
 ```jsx
 <Link to="/about">About</Link>
 ```
+
 ### Route 컴포넌트
 * 지정한 경로가 현재 주소창의 경로와 매칭될 경우 보여줄 컴포넌트를 지정
 * `path` prop을 통해 경로를 지정하고 `component` prop을 통해 컴포넌트를 지정
 ```jsx
 <Route path="/about" component={About} />
 ```
+
 ### Router 컴포넌트
 * `<Link>`와 `<Route>` 컴포넌트가 함께 유기적으로 사용되도록 묶어주는 기능
 * `react-router-dom` 패키지에서는 Router 컴포넌트로 일반적으로 `BrouseRouter`를 사용함
 ```jsx
 <Router>
-  ...
-  <Link to="/about">About</Link>
-  ...
-  <Route path="/about" component={About} />
-  ...
+    ...
+    <Link to="/about">About</Link>
+    ...
+    <Route path="/about" component={About} />
+    ...
 </Router>  
 ```
+
 ### Switch 컴포넌트
 * 하위에 있는 `<Route>` 컴포넌트 중에 제일 처음 매치되는 컴포넌트만 렌더링하고, 나머지는 매치되더라도 무시함
 * 따라서 `<Route>`를 배치하는 순서가 중요함
 ```jsx
 <Switch>
-  <Route path="/" component={Home} />
-  <Route path="/about" component={About} />
-  <Route component={NotFound} />
+    <Route path="/" component={Home} />
+    <Route path="/about" component={About} />
+    <Route component={NotFound} />
 </Switch>
 ```
 

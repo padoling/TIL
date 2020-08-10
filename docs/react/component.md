@@ -7,6 +7,7 @@
 <br>
 
 ## 컴포넌트 정의
+
 ### 함수 컴포넌트
 ```js
 function Welcome(props) {
@@ -16,6 +17,7 @@ function Welcome(props) {
 * JavaScript 함수처럼 쓰면 됨
 * `props`를 인자로 받아 컴포넌트로서의 역할을 할 수 있음
     * `props` : properties의 약자로, 컴포넌트를 정의할 때 받게 되는 인자
+
 ### 클래스 컴포넌트
 ```js
 class Welcome extends React.Component {
@@ -33,15 +35,17 @@ class Welcome extends React.Component {
 <br>
 
 ## 컴포넌트 렌더링
+
 ### 사용자 정의 컴포넌트로 React 엘리먼트 만들기
 * 사용자 정의 컴포넌트로 React 엘리먼트를 나타낼 수 있음
 * 즉, 사용자가 직접 생성한 함수나 클래스를 태그처럼 사용할 수 있음
 * 엘리먼트 예시)
-    ```jsx
-    const element = <Welcome name="Sara" />;
-    ```
+```jsx
+const element = <Welcome name="Sara" />;
+```
 * 사용자 정의 컴포넌트로 작성한 엘리먼트를 발견하면 JSX 속성과 자식을 해당 컴포넌트에 객체로 전달하는데, 이것이 `props`임!
     * 여기서는 `{name: 'Sara}`가 `props`에 포함되는 값
+
 ### 렌더링 예시
 ```jsx
 function Welcome(props) {
@@ -66,21 +70,23 @@ ReactDOM.render(
 * 컴포넌트 내에서 **props를 수정해서는 안됨!**
 * React 컴포넌트는 반드시 **순수 함수**처럼 동작해야 함
 * 순수 함수의 예시)
-    ```js
-    function sum(a, b) {
-        return a + b;
-    }
-    ```
+```js
+function sum(a, b) {
+    return a + b;
+}
+```
 * 순수 함수가 아닌 함수의 예시
-    ```js
-    function withdraw(account, amount) {
-        account.total -= amount;
-    }
-    ```
+```js
+function withdraw(account, amount) {
+    account.total -= amount;
+}
+```
+
 ### 불변성(Immutability)
 * 객체가 변하지 않는 특징
 * 원래 객체의 데이터를 직접 변경하지 않고, 복사한 객체의 값을 변경하여 원래 객체와 교체함으로써 불변성을 유지할 수 있음
 * 인자로 넘어오는 객체가 불변성을 유지하도록 하는 함수를 **순수 함수**라고 함
+
 ### 불변성이 중요한 이유
 * history 유지에 용이
     * 특정 행동을 취소하고 다시 실행하거나, 이전 동작으로 돌아가는 기능을 간단하게 만들 수 있음

@@ -22,7 +22,7 @@ spring boot에서 mybatis를 사용할 경우 resource 폴더 안에 xml 파일�
 
 ### SELECT문 예시
 ```xml
-<select id="selectId" parameterType="string" resultType="Integer>
+<select id="selectId" parameterType="string" resultType="Integer">
     SELECT id
     FROM TableA
     WHERE ...

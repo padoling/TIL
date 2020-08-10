@@ -9,6 +9,7 @@
 <br>
 
 ## React 시작하기
+
 ### 새 React 프로젝트 만들기
 > [새로운 React 앱 만들기](https://ko.reactjs.org/docs/create-a-new-react-app.html#create-react-app)
 1. npx로 프로젝트 생성  
@@ -26,6 +27,7 @@
         ![react start terminal](../img/react_start_terminal.png)
         * 브라우저  
         ![react start browser](../img/react_start_browser.png)
+        
 ### Hello World
 ```jsx
 ReactDOM.render(

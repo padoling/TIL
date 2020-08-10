@@ -1,4 +1,5 @@
 # React State
+
 ## state란?
 * 컴포넌트가 무언가를 기억하게 만들 수 있는 object
 * `props`와 비슷하지만 전혀 다름!
@@ -41,10 +42,12 @@ render() {
 <br>
 
 ## Mounting
+
 ### Mounting이란?
 * React에서 DOM에 리소스가 생성되거나 삭제되는 일련의 생명주기를 다루는 용어
 * `DOM`에 `node`를 추가하는 것을 `mounting`이라고 함
 * 반대로 `DOM`에서 `node`를 제거하는 것을 `unmounting`이라고 함
+
 ### 생명주기 관련 메소드
 * `componentWillMount()` : Before-mount
 * `componentDidMount()` : After-mount

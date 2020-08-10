@@ -1,6 +1,7 @@
 # Shell grammar
 
 ## 기본 문법
+
 ### 기본 출력
 * `echo` : 자동 개행이 되는 출력 명령어
 ```shell
@@ -19,12 +20,10 @@ printf "%s %s" hello world  # 인자값을 넣을 수 있음
 function test() {
     echo "test"
 }
-
 test2() {
     echo "test2"
     echo "인자값: ${@}" # @는 모든 인자를 의미
 }
-
 # 함수 호출
 test
 test2
@@ -39,14 +38,11 @@ test2 "hello" "world"   # 함수에 인자값 넘겨주기
 ```shell
 var="abc"
 num=123
-
 function test() {
     local local_var="local" # 지역 변수
     echo ${local_var}
 }
-
 export hello_world="hello world"    # 환경 변수
-
 ```
 * `$`를 이용하여 변수 사용
 ```shell
@@ -62,10 +58,8 @@ echo "${num}"
 array=("hello" "world" "test")
 echo "${array[0]}"  # "hello"
 echo "${array[@]}"  # 모든 원소
-
 array+=("string")   # 원소 추가
 array[4]="variable"
-
 unset array[4]  # 4번째 인덱스 삭제
 unset array     # 배열 전체 삭제
 ```
@@ -74,7 +68,6 @@ unset array     # 배열 전체 삭제
 * `if[]; then ~ elif[]; then ~ else ~ fi`와 같은 구조
 ```shell
 num=5
-
 if ["${num}" -eq 2]; then
     echo "num = 2"
 elif ["${num}" -eq 3]; then
@@ -93,7 +86,6 @@ while [${num} < 5]; do
     echo "{cnt}"
     cnt=$(( %{cnt}+1 ))
 done
-
 array=(1 2 3 4 5)
 # for문
 for i in ${array[@]}; do

@@ -26,9 +26,11 @@ gradle과 intelliJ 환경에서는 다음과 같이 구성할 수 있다.
 <br>
 
 ## ❕Spring profile과 Gradle profile의 차이
+
 ### Spring profile
 * 빌드한 결과 안에서 스프링이 어떤 profile을 사용할지 결정
 * 런타임 프로파일 설정
+
 ### Gradle profile
 * 빌드할 때 어떤 profile을 리소스에 포함시킬지 결정
 * 빌드타임 프로파일 설정
@@ -53,14 +55,16 @@ sourceSets {
 <br>
 
 ## 실행하기
+
 ### CLI 사용(Gradlew)
 prod 환경으로 실행할 경우 프로젝트 루트 경로에서 CLI에 다음과 같이 입력해준다.
-```
+```shell
 SPRING_PROFILES_ACTIVE=prod ./gradlew clean bootRun -Pprofile=prod
 ```
 * `SPRING_PROFILES_ACTIVE=prod` : Spring profile이 prod임을 의미한다. 스프링은 profile이 prod인 설정파일, 즉 application-prod.properties가 있는지 찾아서 있다면 적용시킨다.
 * `./gradlew clean bootRun` : gradlew로 gradle task를 시작한다. 여기서는 clean과 bootRun을 실행하도록 명령하였다.
 * `-Pprofile=prod` : Gradle proifle이 prod임을 명시한다. build.gradle에서 설정했듯이 resources-prod 폴더의 파일들을 불러온다.
+
 ### IntelliJ 설정 사용
 * 위쪽 실행 버튼이 있는 바의 `Edit Configurations...`를 선택한다.
 * `Add new Configuration`에서 Gradle을 선택하여 Run/Debug 환경을 구성할 수 있다.

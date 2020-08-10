@@ -14,30 +14,35 @@ npm install pm2 -g
 <br>
 
 ## 명령어
+
 ### 프로그램 실행
 ```bash
 pm2 start app.js
 ```
 * 코드가 수정될 경우 자동 재실행되도록 하려면
-    ```bash
-    pm2 start app.js --watch
-    ```
+```bash
+pm2 start app.js --watch
+```
 * 특정 파일이나 디렉토리를 제외하고 재실행 옵션을 주려면
-    ```bash
-    pm2 start app.js --watch --ignore-watch="data/*"
-    ```
+```bash
+pm2 start app.js --watch --ignore-watch="data/*"
+```
+
 ### 실행 중인 프로그램 목록 보기
 ```bash
 pm2 list
 ```
+
 ### 각종 정보 모니터링
 ```bash
 pm2 monit
 ```
+
 ### 프로그램 종료
 ```bash
 pm2 stop [name]
 ```
+
 ### 로그 보기
 ```bash
 pm2 logs

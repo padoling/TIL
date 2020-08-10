@@ -64,9 +64,10 @@ public class ApiDocumentationJUnit5IntegrationTest {
 
 ## documentation 작성
 * `/src/docs/asciidoc` 하위에 `*.adoc`으로 문서를 작성해야 asciidoc이 문서를 생성함
+
 ### 스니펫 삽입하기
 * 아래와 같이 snippet의 위치를 작성하면 문서에 스니펫이 예쁘게 삽입됨
-```adoc
+```javadoc
 include::{snippets}/signup/curl-request.adoc[]
 include::{snippets}/signup/http-request.adoc[]
 ```

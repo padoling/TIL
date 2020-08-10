@@ -14,35 +14,39 @@ npm install sanitize-html
 <br>
 
 ## 사용 예제
+
 ### 기본적인 사용
+
 * 코드
 ```js
 var sanitizeHtml = require('sanitize-html');
-
-var dirty = 'dirty HTML with some <script></script> tags'
+var dirty = 'dirty HTML with some <script></script> tags';
 var clean = sanitizeHtml(dirty);
 ```
+
 * 실행 결과
-```js
+```shell
 console.log(clean);
 > 'dirty HTML with some tags'
 ```
+
 ### customized version
 * 다음과 같이 허용하는 태그나 속성 등을 명시할 수 있음
 * `allowed`로 명시되지 않은 태그들은 전부 삭제됨
 ```js
 clean = sanitizeHtml(dirty, {
-  allowedTags: [ 'b', 'i', 'h1' ],
-  allowedAttributes: {
-    'a': ['href']
-  },
-  allowedIframeHostnames: ['www.youtube.com']
+    allowedTags: [ 'b', 'i', 'h1' ],
+    allowedAttributes: {
+        'a': ['href']
+    },
+    allowedIframeHostnames: ['www.youtube.com']
 });
 ```
+
 ### default set에 추가하기
 ```js
 clean = sanitizeHtml(dirty, {
-  allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
+    allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
 });
 ```
 

@@ -1,4 +1,5 @@
 # Styled Components
+
 ## Styled Component란?
 * CSS-in-JS 라이브러리로, React Component를 CSS를 적용한 component로 만들 수 있음
 
@@ -13,6 +14,7 @@ npm install styled-components
 
 ## 기본 문법
 * `styled`를 사용하여 스타일링된 컴포넌트를 생성하고 생성된 컴포넌트를 변수에 저장하여 자유자재로 사용할 수 있음
+
 ### HTML 엘리먼트 스타일링
 ```jsx
 const StyledBtn = styled.button`

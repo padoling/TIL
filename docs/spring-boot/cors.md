@@ -1,4 +1,5 @@
 # cors
+
 ## cors란?
 * **Cross-Origin Resource Sharing**의 약자로, 서로 다른 출처(origin)에서 리소스를 공유하기 위한 정책
 
@@ -12,6 +13,7 @@
 <br>
 
 ## Request 방식
+
 ### Preflight Request
 * 본 요청을 보내기에 앞서, `OPTIONS` 메소드를 사용하여 예비 요청을 주고받으며 브라우저 스스로가 해당 요청이 안전한 것인지 확인하는 방식
 1. 브라우저가 `OPTIONS`를 이용해 예비 요청을 보낸다. 이 예비 요청에는 자신의 `Origin`에 대한 정보와 이후 보낼 본 요청에 대한 정보들이 담겨 있다.
@@ -39,6 +41,7 @@
 <br>
 
 ## Spring Boot에서 cors 설정하기
+
 ### `WebMvcConfigurer` 이용한 설정
 * `WebMvcConfigurer`를 구현한 클래스에서 `addCorsMappings` 메소드를 구현하면 됨
 * `CorsRegistry`를 파라미터로 받아서 다양한 값들을 설정해줄 수 있음
@@ -56,7 +59,6 @@ public class AppConfig implements WebMvcConfigurer {
                 .allowCredentials(true)
                 .allowedMethods("*");
     }
-
 }
 ```
 * `addMapping` : cors를 적용할 URL 패턴 정의
@@ -74,6 +76,7 @@ public class UserController {
     //...
 }
 ```
+
 ### 주의!
 `OPTIONS`로 Preflight 요청을 보낼 시 응답은 항상 `200`이 와야 하므로, 만약 서비스에 `Interceptor` 등으로 각종 인증을 설정한 경우 `OPTIONS` 요청에는 적용되지 않도록 설정해줘야 한다.
 

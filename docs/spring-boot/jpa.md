@@ -26,10 +26,8 @@
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
-
 @Getter
 @NoArgsConstructor
 @Entity
@@ -60,6 +58,7 @@ public class User {
     }
 }
 ```
+
 ### Column들에 붙이는 어노테이션 종류
 * #### `@id`
   primary key를 의미함
