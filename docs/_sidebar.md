@@ -39,8 +39,7 @@
 * node
   * [node start](/node/node-start.md)
   * [module](/node/node-module.md)
-  * [PM2](/node/pm2.md)
-  * [sanitize-html](/node/sanitize-html.md)
+  * [node libraries](/node/node-libraries.md)
 
 * python
   * [Virtual Env](/python/virtualenv.md)
