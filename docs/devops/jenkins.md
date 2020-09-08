@@ -34,24 +34,24 @@ docker volume create jenkins-data
 
 #### 3. Jenkins node 안에서 docker 명령을 실행하기 위해 `docker:dind` 이미지 다운로드 및 실행
 
-    ```bash
-    # 이미지 다운로드
-    docker image pull docker:dind
+```bash
+# 이미지 다운로드
+docker image pull docker:dind
 
-    # 컨테이너 실행
-    docker container run \
-    --name jenkins-docker \
-    --rm \
-    --detach \
-    --privileged \
-    --network jenkins \
-    --network-alias docker \
-    --env DOCKER_TLS_CERTDIR=/certs \
-    --volume jenkins-docker-certs:/certs/client \
-    --volume jenkins-data:/var/jenkins_home \
-    --publish 2376:2376 \
-    docker:dind
-    ```
+# 컨테이너 실행
+docker container run \
+--name jenkins-docker \
+--rm \
+--detach \
+--privileged \
+--network jenkins \
+--network-alias docker \
+--env DOCKER_TLS_CERTDIR=/certs \
+--volume jenkins-docker-certs:/certs/client \
+--volume jenkins-data:/var/jenkins_home \
+--publish 2376:2376 \
+docker:dind
+```
 
 * `name`: (Optional) 이미지를 실행할 docker container의 이름 설정
 * `rm`: (Optional) docker container 종료 시 자동으로 삭제
@@ -66,25 +66,25 @@ docker volume create jenkins-data
 
 #### 4. `jenkinsci/blueocean` 이미지 다운로드 및 실행
 
-    ```bash
-    # 이미지 다운로드
-    docker image pull jenkinsci/blueocean
+```bash
+# 이미지 다운로드
+docker image pull jenkinsci/blueocean
 
-    # 컨테이너 실행
-    docker container run \
-    --name jenkins-blueocean \
-    --rm \
-    --detach \
-    --network jenkins \
-    --env DOCKER_HOST=tcp://docker:2376 \
-    --env DOCKER_CERT_PATH=/certs/client \
-    --env DOCKER_TLS_VERIFY=1 \
-    --publish 8080:8080 \
-    --publish 50000:50000 \
-    --volume jenkins-data:/var/jenkins_home \
-    --volume jenkins-docker-certs:/certs/client:ro \
-    jenkinsci/blueocean
-    ```
+# 컨테이너 실행
+docker container run \
+--name jenkins-blueocean \
+--rm \
+--detach \
+--network jenkins \
+--env DOCKER_HOST=tcp://docker:2376 \
+--env DOCKER_CERT_PATH=/certs/client \
+--env DOCKER_TLS_VERIFY=1 \
+--publish 8080:8080 \
+--publish 50000:50000 \
+--volume jenkins-data:/var/jenkins_home \
+--volume jenkins-docker-certs:/certs/client:ro \
+jenkinsci/blueocean
+```
 
 <br>
 
