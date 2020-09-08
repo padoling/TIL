@@ -13,6 +13,11 @@
 * CSS
   * [CSS 문법](/css/css-grammar.md)
 
+* DevOps
+  * [Docker](/devops/docker.md)
+  * [Jenkins](/devops/jenkins.md)
+  * [Travis CI](/devops/travis-ci.md)
+
 * Java
   * **Design Patterns**
       * [Builder Pattern](/java/design-pattern/builder-pattern.md)
@@ -71,6 +76,3 @@
   * [profile](/spring-boot/profile.md)
   * [Spring Boot libraries](/spring-boot/spring-boot-libraries.md)
   * [Spring Boot Test](/spring-boot/spring-boot-test.md)
-
-* Tools
-  * [Travis CI](/tools/travis-ci.md)
