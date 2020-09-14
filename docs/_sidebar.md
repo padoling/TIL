@@ -76,3 +76,6 @@
   * [profile](/spring-boot/profile.md)
   * [Spring Boot libraries](/spring-boot/spring-boot-libraries.md)
   * [Spring Boot Test](/spring-boot/spring-boot-test.md)
+
+* SQL
+  * [재귀 쿼리](/sql/recursive-query.md)
