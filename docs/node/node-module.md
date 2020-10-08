@@ -55,6 +55,7 @@ exports = calc;
 * `require()` 함수를 호출하여 모듈 불러오기 가능
 * `require()` 함수는 `module.exports` 객체를 리턴함
 * 인자로 넣는 파일 경로에서 **확장자는 생략 가능**
+
 ```js
 var calc = require("./calc");
 

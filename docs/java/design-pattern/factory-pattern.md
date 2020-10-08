@@ -10,6 +10,7 @@
 
 ### Super Class
 * super class는 인터페이스, 추상 클래스 등이 될 수 있음
+
 ```java
 public interface Animal {
     public int eat(String food);
@@ -18,6 +19,7 @@ public interface Animal {
 
 ### Sub Class
 * `Component()` 안에 해당 클래스의 id를 지정할 수 있음
+
 ```java
 @Component("catAnimal")
 public class CatAnimal implements Animal {

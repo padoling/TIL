@@ -21,7 +21,7 @@
   * [Travis CI](/devops/travis-ci.md)
 
 * [Java](/java/java.md)
-  * **Design Patterns**
+  * [Design Patterns](/java/design-pattern/design-pattern.md)
       * [Builder Pattern](/java/design-pattern/builder-pattern.md)
       * [Dependency Injection](/java/design-pattern/dependency-injection.md)
       * [Singleton Pattern](/java/design-pattern/singleton-pattern.md)
@@ -33,7 +33,11 @@
   * [객체 생명주기](/java/life-cycle-of-objects.md)
 
 * [JavaScript](/javascript/javascript.md)
-  * [JavaScript Grammar](/javascript/grammar.md)
+  * [JavaScript Grammar](/javascript/grammar/grammar.md)
+    * [Array](/javascript/grammar/array.md)
+    * [Callback 함수](/javascript/grammar/callback-function.md)
+    * [조건문](/javascript/grammar/conditional-statements.md)
+    * [export](/javascript/grammar/export.md)
   * [JavaScript Engine](/javascript/js-engine.md)
   * [Web Storage](/javascript/web-storage.md)
 
@@ -46,7 +50,13 @@
 
 * [node](/node/node-start.md)
   * [module](/node/node-module.md)
-  * [node libraries](/node/node-libraries.md)
+  * [node libraries](/node/node-libraries/node-libraries.md)
+    * [body parser](/node/node-libraries/body-parser.md)
+    * [express](/node/node-libraries/express.md)
+    * [mongoose](/node/node-libraries/mongoose.md)
+    * [nodemon](/node/node-libraries/nodemon.md)
+    * [pm2](/node/node-libraries/pm2.md)
+    * [sanitize html](/node/node-libraries/sanitize-html.md)
 
 * [python](/python/python.md)
   * [Virtual Env](/python/virtualenv.md)
@@ -73,7 +83,11 @@
   * [maven](/spring-boot/maven.md)
   * [mybatis](/spring-boot/mybatis.md)
   * [profile](/spring-boot/profile.md)
-  * [Spring Boot libraries](/spring-boot/spring-boot-libraries.md)
+  * [Spring Boot libraries](/spring-boot/spring-boot-libraries/spring-boot-libraries.md)
+    * [Ehcache](/spring-boot/spring-boot-libraries/ehcache.md)
+    * [ModelMapper](/spring-boot/spring-boot-libraries/modelmapper.md)
+    * [Spring Rest Docs](/spring-boot/spring-boot-libraries/spring-rest-docs.md)
+    * [Swagger](/spring-boot/spring-boot-libraries/swagger.md)
   * [Spring Boot Test](/spring-boot/spring-boot-test.md)
 
 * [SQL](/sql/sql.md)
