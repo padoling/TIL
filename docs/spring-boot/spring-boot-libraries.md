@@ -184,12 +184,12 @@ dependencies {
 @ExtendWith({RestDocumentationExtension.class, SpringExtension.class})
 @SpringBootTest
 public class ApiDocumentationJUnit5IntegrationTest { 
-  @Test
-  public void test_something() {
-    mockMvc.perform(get("/api/data"))
-      .andExpect(status().isOk())
-      .andDo(document("something"))
-  }
+    @Test
+    public void test_something() {
+      mockMvc.perform(get("/api/data"))
+        .andExpect(status().isOk())
+        .andDo(document("something"))
+    }
 }
 ```
 * 기본 생성되는 스니펫들
