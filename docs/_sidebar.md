@@ -86,6 +86,7 @@
   * [Spring Boot libraries](/spring-boot/spring-boot-libraries/spring-boot-libraries.md)
     * [Ehcache](/spring-boot/spring-boot-libraries/ehcache.md)
     * [ModelMapper](/spring-boot/spring-boot-libraries/modelmapper.md)
+    * [ObjectMapper](/spring-boot/spring-boot-libraries/objectmapper.md)
     * [Spring Rest Docs](/spring-boot/spring-boot-libraries/spring-rest-docs.md)
     * [Swagger](/spring-boot/spring-boot-libraries/swagger.md)
   * [Spring Boot Test](/spring-boot/spring-boot-test.md)

@@ -29,5 +29,7 @@ public class SpringFoxConfig {
 * `http://localhost:8080/v2/api-docs`로 접속하면 JSON 형태의 raw swagger 화면을 확인할 수 있음
 * UI가 적용된 형태를 보려면 `http://localhost:8080/swagger-ui.html`로 접속하면 됨
 
+<br>
+
 ## Reference
 * <https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api>

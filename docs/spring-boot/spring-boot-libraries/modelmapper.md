@@ -5,11 +5,15 @@
 * 두 개의 비슷한 model 간 데이터를 mapping시키고 싶을 때 사용하면 좋은 라이브러리
 * Entity와 dto를 mapping하는 데 사용하면 좋은 듯
 
+<br>
+
 ## 설치
 
 ```groovy
 implementation 'org.modelmapper:modelmapper:2.3.0'
 ```
+
+<br>
 
 ## 사용 방법
 
@@ -36,6 +40,8 @@ public class PostService() {
     }
 }
 ```
+
+<br>
 
 ## Reference
 * <http://modelmapper.org/getting-started/>

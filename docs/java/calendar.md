@@ -16,3 +16,25 @@ void값을 반환하며 해당 메소드를 호출한 캘린더에 변환된 값
 public void setTimeZone(TimeZone value)
 ```
 해당 Calendar의 TimeZone을 설정하여 Calendar의 값들이 설정된 TimeZone에 맞게 표시되도록 할 수 있음
+
+<br>
+
+## SimpleDateFormat
+* Calendar를 문자열로, 문자열을 Calendar로 변환시키는 기능을 가진 클래스
+
+### SimpleDateFormat.parse()
+* 문자열을 Calendar로 변환
+```java
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
+String ymd = "20201012";
+Calendar c = Calendar.getInstance();
+c.setTime(simpleDateFormat.parse(ymd));
+```
+
+### SimpleDateFormat.format()
+* Calendar를 문자열로 변환
+```java
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
+Calendar c = Calendar.getInstance();
+String time = simpleDateFormat.format(c.getTime());
+```
