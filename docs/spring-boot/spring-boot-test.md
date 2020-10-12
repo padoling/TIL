@@ -49,6 +49,45 @@ public class UserControllerTest {
 
 <br>
 
+## @DataJpaTest
+* JPA Application을 테스트하기 위한 어노테이션
+* `@Entity` 클래스를 스캔하고 JPA Repository를 설정함
+* 일반적인 `@Component`와 `@ConfigurationProperties` bean들은 스캔하지 않음
+* 기본적으로 transactional하고, 각 테스트가 끝날 때마다 롤백함
+* Ex)
+```java
+@DataJpaTest
+public class UserRepositoryTest {
+
+    @Autowired
+    private TestEntityManager entityManager;
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @Test
+    public void testFindBySocialTypeAndSocialUid() {
+        //given
+        String nickname = "padoling";
+        User testUser = new User(nickname);
+        entityManager.persist(testUser);
+        entityManager.flush();
+
+        //when
+        User foundUser = userRepository.findByNickname(nickname)
+                .orElse(null);
+
+        //then
+        assertThat(foundUser).isNotNull();
+        assertThat(foundUser.getNickname()).isEqualTo(nickname);
+    }
+}
+```
+* `TestIntityManager` bean을 주입하여 사용 가능
+* 만약 In-memory DB가 아닌 다른 DB를 사용하려고 한다면, 클래스 위에 `@AutoConfigureTestDatabase` 어노테이션을 붙여서 사용 가능
+
+<br>
+
 ## Reference
 * [Spring Boot Features](https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-testing)
 * [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/#writing-tests-annotations)
