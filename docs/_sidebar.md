@@ -82,6 +82,7 @@
   * [JPA](/spring-boot/jpa.md)
   * [maven](/spring-boot/maven.md)
   * [profile](/spring-boot/profile.md)
+  * [Servlet](/spring-boot/servlet.md)
   * [Spring Boot libraries](/spring-boot/spring-boot-libraries/spring-boot-libraries.md)
     * [Ehcache](/spring-boot/spring-boot-libraries/ehcache.md)
     * [ModelMapper](/spring-boot/spring-boot-libraries/modelmapper.md)
