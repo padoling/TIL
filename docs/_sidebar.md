@@ -1,6 +1,7 @@
 * [Algorithm](/algorithm/algorithm.md)
-  * [Programmers](/algorithm/programmers/level1.md)
-    * [level 1](/algorithm/programmers/level1.md)
+  * [Programmers](/algorithm/programmers/programmers.md)
+    * [124 나라의 숫자](/algorithm/programmers/124-나라의-숫자.md)
+
 * [AWS](/aws/aws.md)
   * [CloudFront](/aws/cloudfront.md)
   * [CloudWatch](/aws/cloudwatch.md)
