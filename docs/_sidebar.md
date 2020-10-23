@@ -14,7 +14,6 @@
   * [SQS](/aws/sqs.md)
 
 * [CSS](/css/css.md)
-  * [CSS 문법](/css/css-grammar.md)
 
 * [DevOps](/devops/devops.md)
   * [Docker](/devops/docker.md)
@@ -22,7 +21,7 @@
   * [Travis CI](/devops/travis-ci.md)
 
 * [Java](/java/java.md)
-  * [Design Patterns](/java/design-pattern/design-pattern.md)
+  * [디자인 패턴](/java/design-pattern/design-pattern.md)
       * [Builder Pattern](/java/design-pattern/builder-pattern.md)
       * [Dependency Injection](/java/design-pattern/dependency-injection.md)
       * [Singleton Pattern](/java/design-pattern/singleton-pattern.md)
@@ -34,7 +33,7 @@
   * [객체 생명주기](/java/life-cycle-of-objects.md)
 
 * [JavaScript](/javascript/javascript.md)
-  * [JavaScript Grammar](/javascript/grammar/grammar.md)
+  * [JavaScript 문법](/javascript/grammar/grammar.md)
     * [Array](/javascript/grammar/array.md)
     * [Callback 함수](/javascript/grammar/callback-function.md)
     * [조건문](/javascript/grammar/conditional-statements.md)
