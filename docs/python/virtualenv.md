@@ -18,7 +18,7 @@ python3 -m pip install --user -U virtualenv
 python3 -m virtualenv venv
 
 # 가상환경 활성화
-source env/bin/activate
+source venv/bin/activate
 
 # 현재 가상환경 비활성화
 deactivate
