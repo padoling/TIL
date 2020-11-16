@@ -23,7 +23,7 @@
   * [Travis CI](/devops/travis-ci.md)
 
 * [Java](/java/java.md)
-  * [디자인 패턴](/java/design-pattern/design-pattern.md)
+  * [Design Pattern](/java/design-pattern/design-pattern.md)
       * [Builder Pattern](/java/design-pattern/builder-pattern.md)
       * [Dependency Injection](/java/design-pattern/dependency-injection.md)
       * [Singleton Pattern](/java/design-pattern/singleton-pattern.md)
@@ -32,13 +32,14 @@
   * [Exceptions](/java/exceptions.md)
   * [JDBC](/java/jdbc.md)
   * [stream](/java/stream.md)
-  * [객체 생명주기](/java/life-cycle-of-objects.md)
+  * [Lifecycle of Objects](/java/life-cycle-of-objects.md)
+  * [Memory area](/java/memory-area.md)
 
 * [JavaScript](/javascript/javascript.md)
-  * [JavaScript 문법](/javascript/grammar/grammar.md)
+  * [JavaScript grammar](/javascript/grammar/grammar.md)
     * [Array](/javascript/grammar/array.md)
-    * [Callback 함수](/javascript/grammar/callback-function.md)
-    * [조건문](/javascript/grammar/conditional-statements.md)
+    * [Callback function](/javascript/grammar/callback-function.md)
+    * [conditional statements](/javascript/grammar/conditional-statements.md)
     * [export](/javascript/grammar/export.md)
   * [JavaScript Engine](/javascript/js-engine.md)
   * [Web Storage](/javascript/web-storage.md)
@@ -76,7 +77,7 @@
   * [Styled Components](/react/styled-components.md)
 
 * [Shell](/shell/shell.md)
-  * [shell 문법](/shell/shell-grammar.md)
+  * [shell grammar](/shell/shell-grammar.md)
   * [Zsh](/shell/zsh.md)
 
 * [Spring Boot](/spring-boot/spring-boot-start.md)
@@ -96,4 +97,4 @@
   * [Spring Boot Test](/spring-boot/spring-boot-test.md)
 
 * [SQL](/sql/sql.md)
-  * [재귀 쿼리](/sql/recursive-query.md)
+  * [recursive query](/sql/recursive-query.md)
