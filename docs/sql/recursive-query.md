@@ -24,7 +24,7 @@
 ```sql
 WITH CTE AS (
     SELECT id, name, parent_id
-    FROM ANIMAL
+    FROM CAT
     WHERE id = 2
     UNION ALL
     SELECT a.id, a.name, a.parent_id
@@ -51,7 +51,7 @@ FROM CTE
     * 위 예시에서 anchor 멤버인 부분
     ```sql
     SELECT id, name, parent_id
-    FROM ANIMAL
+    FROM CAT
     WHERE id = 2
     ```
 
