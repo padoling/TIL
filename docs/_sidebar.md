@@ -41,6 +41,7 @@
     * [Callback function](/javascript/grammar/callback-function.md)
     * [conditional statements](/javascript/grammar/conditional-statements.md)
     * [export](/javascript/grammar/export.md)
+    * [this](/javascript/grammar/this.md)
   * [JavaScript Engine](/javascript/js-engine.md)
   * [Web Storage](/javascript/web-storage.md)
 
