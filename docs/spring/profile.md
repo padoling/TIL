@@ -68,7 +68,7 @@ SPRING_PROFILES_ACTIVE=prod ./gradlew clean bootRun -Pprofile=prod
 ### IntelliJ 설정 사용
 * 위쪽 실행 버튼이 있는 바의 `Edit Configurations...`를 선택한다.
 * `Add new Configuration`에서 Gradle을 선택하여 Run/Debug 환경을 구성할 수 있다.
-![spring boot profile 1](/img/spring_boot_profile_1.png)
+![spring boot profile 1](../img/spring_boot_profile_1.png)
     * Gradle project : gradle로 빌드할 프로젝트를 넣어준다.
     * Tasks : gradle task를 지정한다.
     * Arguments : Gradle profile을 지정할 때 사용할 argument를 넣어준다.
