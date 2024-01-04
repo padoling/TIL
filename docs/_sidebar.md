@@ -87,6 +87,7 @@
   * [Zsh](/shell/zsh.md)
 
 * [Spring](/spring/spring.md)
+  * [Spring Bean](/spring/bean.md)
   * [gradle](/spring/gradle.md)
   * [JPA](/spring/jpa.md)
   * [maven](/spring/maven.md)
