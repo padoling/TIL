@@ -29,6 +29,7 @@
       * [Singleton Pattern](/java/design-pattern/singleton-pattern.md)
       * [Factory Pattern](/java/design-pattern/factory-pattern.md)
   * [Calendar](/java/calendar.md)
+  * [casting](/java/casting.md)
   * [Exceptions](/java/exceptions.md)
   * [JDBC](/java/jdbc.md)
   * [stream](/java/stream.md)
