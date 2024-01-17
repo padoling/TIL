@@ -24,17 +24,29 @@ public class Application {
 * Spring Boot에서 보통 위의 코드를 프로젝트의 가장 상위에 작성함
 * 아래 세 가지를 포함하는 편리한 어노테이션
 
-### `@Configuration`
-* 클래스를 application context를 위한 bean을 정의하는 소스로 태그함
-* 즉, 해당 클래스를 설정과 관련된 bean을 정의할 때 사용하도록 만듦
+### `@SpringBootConfiguration`
+* `@Configuration`이 적용된 클래스가 하나 이상의 `@Bean` 메소드를 선언하면 런타임 시 요청에 따라 스프링 컨테이너에 의해 처리될 수 있음을 나타냄
+* 즉, 사용자가 추가로 빈이나 설정 클래스를 등록할 수 있게 해줌
 
 ### `@EnableAutoConfiguration`
-* Spring Boot가 다양한 설정들에 따라 bean을 추가하기 시작하도록 함
-* classpath 설정, 다른 bean들, property 설정들을 참고함
+```java
+// ...
+@AutoConfigurationPackage
+@Import(AutoConfigurationImportSelector.class)
+public @interface EnableAutoConfiguration
+```
+* Application Context의 설정을 자동으로 수행하는 어노테이션
+* 즉, Spring Application에서 자동으로 jar dependencies를 기반으로 의존성을 설정하는 것
 * Ex) 만약 `spring-webmvc`가 classpath에 존재한다면, `DispatcherServlet`을 셋팅하는 등 웹 애플리케이션과 관련된 설정들을 자동으로 해줌
+* `META-INF/spring.factories`에 정의되어 있는 configuration 대상 클래스들을 빈으로 등록함. 이 클래스들은 `@Configuration` 어노테이션이 없어도 자동으로 빈으로 등록됨
+* 모든 클래스가 항상 빈으로 등록된다면 엄청난 리소스 낭비이므로 `AutoConfigurationImportSelector`가 `@Conditional` 어노테이션 등을 활용해서 필터링 작업을 수행함
 
 ### `@ComponentScan`
 * Spring Boot가 현재 패키지 하위에서 다른 components, configurations, service와 같은 컴포넌트들을 찾도록 함
+* 아래와 같은 태그 사용 가능
+    - `includeFilters` : 스캔 대상에 포함할 클래스
+    - `excludeFilters` : 스캔 대상에서 제외할 클래스
+    - `basePackages` : 여기에 직접 경로를 설정하지 않았다면 이 어노테이션이 명시된 클래스(Application.java)가 있는 패키지가 기본 경로로 설정되며 해당 패키지와 하위 패키지들을 스캔하여 빈으로 등록함.
 
 <br>
 
